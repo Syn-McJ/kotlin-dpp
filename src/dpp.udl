@@ -35,11 +35,6 @@ dictionary SystemIDs {
 };
 
 interface Identifier {
-    [Name=new_from_vec]
-    // this requires modifying rs-dpps Identifier. We shoud use a wrapper instead or use one of the existing methods.
-    // UDL will also have support for 'bytes' type which might be useful for cleaner implementation.
-    constructor(sequence<u8> vector);
-    
     sequence<u8> to_vec();
 };
 

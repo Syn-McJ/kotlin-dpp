@@ -3,6 +3,7 @@
 - Clone the [platform repo](https://github.com/dashpay/platform)
 - Place kotlin-dpp folder inside [platform/packages](https://github.com/dashpay/platform/tree/v0.24.5/packages)
 - Setup Rust + NDK using [this guide](https://sal.dev/android/intro-rust-android-uniffi/) (step 1).
+- `cd packages/kotlin-dpp`
 - Generate Rust libraries using this command (you can omit --release, but the debug libraries will be very big).
 
 ```cargo build --target x86_64-linux-android --target i686-linux-android --target armv7-linux-androideabi --target aarch64-linux-android --release```
